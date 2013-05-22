@@ -6,34 +6,41 @@
     <link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap-responsive.min.css"/>
     <link rel="stylesheet" href="/css/styles.css"/>
     
-    <!-- RequireJS -->
-    <script data-main="js/main3" src="js/lib/require.js"></script>
-    
 </head>
 <body>
 
 <div class="container">
     <ul class="nav nav-tabs">
         <li><a href="/">Intro</a></li>
-        <li><a href="/example0.html">Old Way</a></li>
+        <li class="active"><a href="/example0.html">Old Way</a></li>
         <li><a href="/example1.html">Example 1</a></li>
         <li><a href="/example2.html">Example 2</a></li>
-        <li class="active"><a href="/example3.html">Example 3</a></li>
+        <li><a href="/example3.html">Example 3</a></li>
         <li><a href="/example4.html">Example 4</a></li>
         <li><a href="/example5.html">Example 5</a></li>
         <li><a href="/example6.html">Example 6</a></li>
     </ul>
     
-    <h2>Loading Non-AMD Dependencies</h2>
-
-    <div class="well">
-        <button class="btn btn-primary buy-brew" data-name="Coors Light" data-price="2">Purchase Coors Light - $2</button>
-        <button class="btn btn-primary buy-brew" data-name="IPA" data-price="3">Purchase IPA - $3</button>
-        <button class="btn btn-primary buy-brew" data-name="Hefeweizen" data-price="4">Purchase Hefeweizen - $4</button>
+    <h2>The Old Way</h2>
     
-        <p id="console"></p>
-    </div>
+    <div class="well">
         
+        <h4>List out all files</h4>
+        <ul>
+            <li>Create a huge list of scripts in a file</li>
+            <li>Make sure the dependency ordering is correct</li>
+            <li>Maybe you concanate all the scripts for production</li>
+        </ul>
+        
+        <h4>Why is this bad?</h4>
+        <ul>
+            <li>Pollute the global namespace</li>
+            <li>Dependencies are not clearly defined (hard to test)</li>
+            <li>Creating smaller builds can be extremely difficult</li>
+            
+        </ul>
+    </div>
+    
 </div>
 
 </body>
