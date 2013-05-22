@@ -1,8 +1,13 @@
 
+
+requirejs.config({
+    urlArgs: "bust=" + (new Date()).getTime()
+});
+
 /*
  * The main module defintion, which kicks everything off
  */
-define([
+require([
     'config',
     
     /*

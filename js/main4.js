@@ -3,6 +3,7 @@
  * Configure how and where to get non-requirejs files
  */
 requirejs.config({
+    urlArgs: "bust=" + (new Date()).getTime(),
     paths: {
         "jquery": "lib/jquery/jquery",
         'underscore': 'lib/underscore',

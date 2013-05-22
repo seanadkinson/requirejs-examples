@@ -3,6 +3,7 @@
  * Configure how and where to get non-requirejs files
  */
 requirejs.config({
+    urlArgs: "bust=" + (new Date()).getTime(),
     paths: {
         "jquery": "lib/jquery/jquery",
         'underscore': 'lib/underscore',
@@ -30,7 +31,7 @@ requirejs.onError = console && (console.error || console.log);
 /*
  * The main module defintion, which kicks everything off
  */
-define([
+require([
     'bar/Menu2'
 ],
     function(Menu) {

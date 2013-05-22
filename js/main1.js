@@ -2,7 +2,7 @@
 /*
  * The main module defintion, which kicks everything off
  */
-define([
+require([
     
     /*
      * Converted to "config.js", relative to main file
