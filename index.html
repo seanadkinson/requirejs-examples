@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RequireJS Examples</title>
+    <link rel="stylesheet" href="/js/lib/highlight.js/styles/default.css">
+    <script src="/js/lib/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap-responsive.min.css"/>
+    
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li><a href="/example1.html">Example 1</a></li>
+        <li><a href="/example2.html">Example 2</a></li>
+        <li><a href="/example3.html">Example 3</a></li>
+        <li><a href="/example4.html">Example 4</a></li>
+        <li><a href="/example5.html">Example 5</a></li>
+        <li><a href="/example6.html">Example 6</a></li>
+    </ul>
+    
+    <h1>RequireJS Introduction</h1>
+    <br/>
+    
+    <p>RequireJS implements the AMD (Asynchronous Module Definition) specification, which grew out of the 
+    CommonJS specification.</p>
+    <br/>
+    
+    <h4>Things that RequireJS/AMD provide:</h4>
+    <ul>
+        <li>A module definition optimized for the browser</li>
+        <li>Asynchonous loading of javascript files/module dependencies</li>
+        <li>No code changes needed for production build</li>
+        <li>A testable module signature that let's you mock dependencies easily</li>
+        <li>Ability to "shim" non-comformant JavaScript files into the process</li>
+        <li>Tons of configuration...</li>
+    </ul>
+    <br/>
+    
+    <h4>Getting Started</h4>
+    <p>Each page has a single script tag that loads require.js, and points to its "main" module file</p>
+<pre>
+<code class="javascript">
+    &lt;script data-main="js/main" src="js/lib/require.js">&lt;/script>
+</code>
+</pre>
+    <br/>
+    
+    <h4>Module Definition</h4>
+    <p>Each module can have an ID, an array of dependencies, and a factory function or object.</p>
+<pre>
+<code class="javascript">
+    define(id?, dependencies?, factory);
+</code>
+</pre>
+    <h5>Notes</h5>
+    <ul>
+        <li>ID is optional and defaults to the reference name used to load the file</li>
+        <li>If dependencies are specified, they are passed in-order to the factory function</li>
+        <li>The return value of the factory function becomes the public API for the module</li>
+        <li>If factory is an object, this is used as the module API</li>
+    </ul>
+    
+</div>
+
+</body>
+</html>
