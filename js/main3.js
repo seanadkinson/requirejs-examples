@@ -8,10 +8,7 @@ requirejs.config({
     },
     shim: {
         'jquery': {
-            exports: 'window.jQuery',
-            init: function($) {
-                return $.noConflict();
-            }
+            exports: 'window.jQuery'
         }
     }
 });

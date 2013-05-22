@@ -4,6 +4,7 @@
     <title>RequireJS Examples</title>
     <link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/js/lib/bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
     
     <!-- RequireJS -->
     <script data-main="js/main4" src="js/lib/require.js"></script>
@@ -15,19 +16,18 @@
     <ul class="nav nav-tabs">
         <li><a href="/example1.html">Example 1</a></li>
         <li><a href="/example2.html">Example 2</a></li>
-        <li class="active"><a href="/example3.html">Example 3</a></li>
-        <li><a href="/example4.html">Example 4</a></li>
+        <li><a href="/example3.html">Example 3</a></li>
+        <li class="active"><a href="/example4.html">Example 4</a></li>
         <li><a href="/example5.html">Example 5</a></li>
         <li><a href="/example6.html">Example 6</a></li>
     </ul>
     
     <h2>Loading Non-AMD Dependencies That Have Dependencies</h2>
     
-    <button class="btn btn-primary buy-brew" data-name="Coors Light" data-price="2">Purchase Coors Light - $2</button>
-    <button class="btn btn-primary buy-brew" data-name="IPA" data-price="3">Purchase IPA - $3</button>
-    <button class="btn btn-primary buy-brew" data-name="Hefeweizen" data-price="4">Purchase Hefeweizen - $4</button>
-
-    <p id="console"></p>
+    <div id="menu"></div>
+    
+    <p>Tab: $<span id="tab"></span></p>
+    
     
 </div>
 

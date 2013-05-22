@@ -6,7 +6,10 @@ requirejs.config({
     paths: {
         "jquery": "lib/jquery/jquery",
         'underscore': 'lib/underscore',
-        'Backbone': 'lib/backbone'
+        'Backbone': 'lib/backbone',
+        
+        'text': 'lib/text',
+        'templates': '../templates'
     },
     shim: {
         'jquery': {
@@ -28,7 +31,7 @@ requirejs.onError = console && (console.error || console.log);
  * The main module defintion, which kicks everything off
  */
 define([
-    'bar/Menu'
+    'bar/Menu2'
 ],
     function(Menu) {
         var menu = new Menu({
