@@ -1,4 +1,6 @@
-
+/**
+ * Bartender.js -- purchase brews and get your tab
+ */
 define(
     ['bar/tab'],
     function(tab) {

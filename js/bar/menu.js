@@ -1,4 +1,6 @@
-
+/**
+ * Menu.js -- Displays the bar menu
+ */
 define([
     'Backbone',
     'bar/bartender'
